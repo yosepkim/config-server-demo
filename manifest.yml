@@ -1,0 +1,11 @@
+---
+applications:
+- name: config-server-demo
+  memory: 1G
+  stack: windows
+  buildpacks:
+   - hwc_buildpack
+  env:
+    Hosting__Environment: development
+  services:
+   - ConfigServerDemo
